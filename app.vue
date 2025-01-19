@@ -11,6 +11,18 @@ useHead({
     lang: 'en',
   },
 });
+
+// Import Nuxt's router to access the routes
+import { useRouter } from 'vue-router';
+
+// Get available routes dynamically
+const router = useRouter();
+const navLinks = router.options.routes
+  .filter((route) => route.path !== '/' && !route.path.includes(':')) // Exclude dynamic and root routes
+  .map((route) => ({
+    name: route.name || route.path.replace('/', ''), // Use route name or derive from path
+    path: route.path,
+  }));
 </script>
 
 <template>
@@ -21,12 +33,15 @@ useHead({
         <h1 class="text-2xl font-bold">
           <a href="/">Pluton Capital</a>
         </h1>
+
+        <!-- Dynamic Navigation -->
         <nav>
           <ul class="flex space-x-6">
-            <li><a href="#about" class="hover:text-gray-300">About</a></li>
-            <li><a href="#portfolio" class="hover:text-gray-300">Portfolio</a></li>
-            <li><a href="#team" class="hover:text-gray-300">Team</a></li>
-            <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            <li v-for="link in navLinks" :key="link.path">
+              <a :href="link.path" class="hover:text-gray-300 capitalize">
+                {{ link.name }}
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
