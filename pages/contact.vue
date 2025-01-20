@@ -31,7 +31,7 @@
         <iframe
           class="w-full h-full rounded"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.933905208798!2d-6.245833684007658!3d53.34881277997988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80df7c1625%3A0x8c9075eab96c299b!2sThe%20CHQ%20Building!5e0!3m2!1sen!2sie!4v1674217893000!5m2!1sen!2sie"
-          allowfullscreen=""
+          allowfullscreen="true"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
