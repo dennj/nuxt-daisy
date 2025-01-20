@@ -9,48 +9,63 @@
       <div
         v-for="member in team"
         :key="member.id"
-        class="text-center bg-white p-6 rounded-lg shadow"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md p-6"
       >
-        <!-- Image Container -->
-        <div class="w-full h-96 overflow-hidden rounded-lg bg-gray-100">
-          <img
-            :src="member.image"
-            :alt="`${member.name} photo`"
-            class="w-full h-full object-cover"
-          />
+        <!-- Image -->
+        <img
+          :src="member.image"
+          :alt="`${member.name} photo`"
+          class="w-32 h-32 mb-4 rounded-full shadow-lg"
+        />
+
+        <!-- Name -->
+        <h3 class="text-xl font-semibold text-gray-900">{{ member.name }}</h3>
+
+        <!-- Position -->
+        <p class="text-red-800">{{ member.position }}</p>
+
+        <!-- Description -->
+        <p class="text-gray-500">{{ member.description }}</p>
+
+        <!-- Social Links -->
+        <div class="flex mt-4 space-x-3">
+          <a
+            v-if="member.linkedin"
+            :href="member.linkedin"
+            target="_blank"
+            class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
+          >
+            LinkedIn
+          </a>
         </div>
-        <!-- Member Name -->
-        <h2 class="text-xl font-semibold text-gray-800 mt-4">{{ member.name }}</h2>
-        <!-- Member Position -->
-        <p class="text-gray-600">{{ member.position }}</p>
       </div>
     </div>
   </div>
 </template>
 
-
 <script setup>
 import DennjOseleImage from '@/assets/images/team/dennj-osele.jpg';
-import RaghavBolaImage from '@/assets/images/team/raghav-bola.jpg';
+import RaghavBholaImage from '@/assets/images/team/raghav-bhola.jpg';
 
 const team = [
-  {
+{
     id: 1,
     name: 'Dennj Osele',
-    position: 'Tech Lead',
+    position: 'CEO & Founder',
     description: 'John leads the company with 20 years of experience in private equity and mergers.',
     image: DennjOseleImage,
+    linkedin: 'https://www.linkedin.com/in/dennjosele',
   },
   {
     id: 2,
-    name: 'Raghav Bola',
+    name: 'Raghav Bhola',
     position: 'Financial Officer',
     description: 'Jane manages financial operations and investor relations.',
-    image: RaghavBolaImage,
-  },
+    image: RaghavBholaImage,
+    linkedin: 'https://www.linkedin.com/in/raghavbhola',
+  }
 ];
 </script>
 
 <style scoped>
-/* Optional Custom Styles */
 </style>
