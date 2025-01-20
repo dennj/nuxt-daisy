@@ -26,7 +26,7 @@ const navLinks = router.options.routes
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen">
     <!-- Global Header -->
     <header class="bg-gray-900 text-white py-4 shadow-md">
       <div class="container mx-auto flex items-center justify-between">
@@ -48,7 +48,7 @@ const navLinks = router.options.routes
     </header>
 
     <!-- Dynamic Page Content -->
-    <main>
+    <main class="flex-grow">
       <NuxtPage />
     </main>
 

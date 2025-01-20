@@ -7,6 +7,7 @@ module.exports = {
     './nuxt.config.{js,ts}',
     './node_modules/flowbite/**/*.{js,ts}',
     './app.vue',
+    './content/**/*.{md}',
   ],
   theme: {
     extend: {
@@ -20,6 +21,7 @@ module.exports = {
     },
   },  
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('@tailwindcss/typography')
   ],
 };
