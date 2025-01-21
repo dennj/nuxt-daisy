@@ -1,23 +1,23 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="bg-blue-50 text-gray-800 py-20 text-center">
+    <section class="bg-base-200 text-base-content py-20 text-center">
       <div class="container mx-auto">
         <h2 class="text-4xl font-bold mb-6">Empowering Growth Through Strategic Investments</h2>
         <p class="mb-8 text-lg">
           At Pluton Capital, we drive innovation and deliver value through tailored financial solutions.
         </p>
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-colors duration-200">
+        <button class="btn btn-primary btn-lg">
           Learn More
         </button>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-20 bg-base-100">
       <div class="container mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-8 text-gray-800">About Pluton Capital</h3>
-        <p class="text-gray-600 text-lg mb-16">
+        <h3 class="text-3xl font-bold mb-8 text-base-content">About Pluton Capital</h3>
+        <p class="text-base-content/60 text-lg mb-16">
           Pluton Capital is a leading private equity firm committed to empowering businesses through strategic
           investments and operational excellence.
         </p>
@@ -31,15 +31,17 @@
               :key="index"
               @mouseover="activeDescription = step.description"
               @mouseleave="activeDescription = defaultDescription"
-              class="bg-gray-100 hover:bg-blue-100 text-gray-800 font-medium rounded-lg shadow px-6 py-3 transition-all duration-200"
+              class="btn btn-outline btn-primary"
             >
               {{ step.title }}
             </button>
           </div>
 
           <!-- Description Box -->
-          <div class="max-w-3xl mx-auto p-8 bg-gray-50 border border-gray-200 rounded-lg shadow">
-            <p class="text-gray-700 text-lg">{{ activeDescription }}</p>
+          <div class="card w-full max-w-3xl mx-auto shadow-lg">
+            <div class="card-body">
+              <p class="text-lg text-base-content">{{ activeDescription }}</p>
+            </div>
           </div>
         </div>
       </div>

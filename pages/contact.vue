@@ -11,25 +11,30 @@
         <p class="text-gray-600">We’d love to hear from you. Reach out to us via any of the methods below:</p>
 
         <ul class="space-y-2 text-gray-700">
-          <li>
-            <strong>Email:</strong> 
-            <a href="mailto:info@pluton.capital" class="text-blue-500 hover:underline">info@pluton.capital</a>
+          <li class="flex items-center space-x-2">
+            <strong class="text-primary">Email:</strong>
+            <a href="mailto:info@pluton.capital" class="link link-primary">info@pluton.capital</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <strong class="text-primary">Phone:</strong>
+            <a href="tel:+393338751965" class="link link-primary">+39 333 875 1965</a>
           </li>
           <li>
-            <strong>Phone:</strong> 
-            <a href="tel:+393338751965" class="text-blue-500 hover:underline">+39 333 875 1965</a>
-          </li>
-          <li>
-            <strong>Address:</strong>
-            <p>The CHQ Building, <br /> Custom House Quay, <br /> Dublin 1, D01 Y6H7, <br /> Ireland</p>
+            <strong class="text-primary">Address:</strong>
+            <address class="not-italic">
+              The CHQ Building, <br />
+              Custom House Quay, <br />
+              Dublin 1, D01 Y6H7, <br />
+              Ireland
+            </address>
           </li>
         </ul>
       </div>
 
       <!-- Embedded Map (Google Maps) -->
-      <div class="h-64 md:h-full">
+      <div class="h-64 md:h-full rounded-lg overflow-hidden">
         <iframe
-          class="w-full h-full rounded"
+          class="w-full h-full"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.933905208798!2d-6.245833684007658!3d53.34881277997988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80df7c1625%3A0x8c9075eab96c299b!2sThe%20CHQ%20Building!5e0!3m2!1sen!2sie!4v1674217893000!5m2!1sen!2sie"
           allowfullscreen="true"
           loading="lazy"
@@ -39,7 +44,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-/* Optional custom styles for padding or responsiveness */
-</style>

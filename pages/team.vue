@@ -9,36 +9,39 @@
       <div
         v-for="member in team"
         :key="member.id"
-        class="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-lg p-6"
+        class="card bg-base-100 shadow-lg"
       >
         <!-- Image -->
-        <div class="w-40 h-65 rounded overflow-hidden">
+        <figure class="w-full h-64 overflow-hidden">
           <img
             :src="member.image"
             :alt="`${member.name} photo`"
-            class="w-full h-full object-cover"
+            class="object-cover w-full h-full"
           />
-        </div>
+        </figure>
 
-        <!-- Name -->
-        <h3 class="text-xl font-semibold text-gray-900 mt-4">{{ member.name }}</h3>
+        <!-- Card Body -->
+        <div class="card-body items-center text-center">
+          <!-- Name -->
+          <h3 class="card-title text-lg">{{ member.name }}</h3>
 
-        <!-- Position -->
-        <p class="text-red-800">{{ member.position }}</p>
+          <!-- Position -->
+          <p class="text-primary font-semibold">{{ member.position }}</p>
 
-        <!-- Description -->
-        <p class="text-gray-500">{{ member.description }}</p>
+          <!-- Description -->
+          <p class="text-gray-500">{{ member.description }}</p>
 
-        <!-- Social Links -->
-        <div class="flex mt-4 space-x-3">
-          <a
-            v-if="member.linkedin"
-            :href="member.linkedin"
-            target="_blank"
-            class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
-          >
-            LinkedIn
-          </a>
+          <!-- Social Links -->
+          <div class="card-actions mt-4">
+            <a
+              v-if="member.linkedin"
+              :href="member.linkedin"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </div>
