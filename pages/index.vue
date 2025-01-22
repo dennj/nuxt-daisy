@@ -13,8 +13,47 @@
       </div>
     </section>
 
+        <!-- Problem Section -->
+        <section id="problems" class="py-20 bg-base-100">
+      <div class="container mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-8 text-base-content">Problems in the Irish Service Market</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Problem Card 1 -->
+          <div class="card shadow-lg bg-base-200">
+            <div class="card-body">
+              <h4 class="text-xl font-bold mb-4 text-primary">Fragmented Market</h4>
+              <p class="text-base-content">
+                The Irish service market is highly fragmented, creating inefficiencies and limiting growth potential.
+              </p>
+            </div>
+          </div>
+
+          <!-- Problem Card 2 -->
+          <div class="card shadow-lg bg-base-200">
+            <div class="card-body">
+              <h4 class="text-xl font-bold mb-4 text-primary">Aging Business Owners</h4>
+              <p class="text-base-content">
+                20% of business owners are over 60 and looking to retire, leaving businesses without succession plans.
+              </p>
+            </div>
+          </div>
+
+          <!-- Problem Card 3 -->
+          <div class="card shadow-lg bg-base-200">
+            <div class="card-body">
+              <h4 class="text-xl font-bold mb-4 text-primary">Scaling Challenges</h4>
+              <p class="text-base-content">
+                Many owners lack the capital and expertise needed to scale their businesses effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- About Section -->
-    <section id="about" class="py-20 bg-base-100">
+    <section id="about" class="py-20 bg-base-200">
       <div class="container mx-auto text-center">
         <h3 class="text-3xl font-bold mb-8 text-base-content">About Pluton Capital</h3>
         <p class="text-base-content/60 text-lg mb-16">
@@ -22,26 +61,27 @@
           investments and operational excellence.
         </p>
 
-        <!-- Interactive Steps Component -->
-        <div class="space-y-10">
-          <!-- Steps -->
-          <div class="flex justify-center flex-wrap gap-4">
-            <button
-              v-for="(step, index) in steps"
-              :key="index"
-              @mouseover="activeDescription = step.description"
-              @mouseleave="activeDescription = defaultDescription"
-              class="btn btn-outline btn-primary"
-            >
-              {{ step.title }}
-            </button>
-          </div>
+        <!-- Custom Styled Tabs -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <a
+            v-for="(step, index) in steps"
+            :key="index"
+            class="tab p-6 w-40 h-40 flex items-center justify-center text-center font-bold rounded-lg shadow-lg cursor-pointer transition-all"
+            :class="{
+              'bg-primary text-primary-content': activeTab === index,
+              'bg-base-100 text-base-content': activeTab !== index,
+              'hover:bg-primary hover:text-primary-content': activeTab !== index,
+            }"
+            @mouseover="activeTab = index"
+          >
+            {{ step.title }}
+          </a>
+        </div>
 
-          <!-- Description Box -->
-          <div class="card w-full max-w-3xl mx-auto shadow-lg">
-            <div class="card-body">
-              <p class="text-lg text-base-content">{{ activeDescription }}</p>
-            </div>
+        <!-- Description Box -->
+        <div class="card w-full max-w-3xl mx-auto shadow-lg  bg-base-100">
+          <div class="card-body">
+            <p class="text-lg text-base-content">{{ steps[activeTab].description }}</p>
           </div>
         </div>
       </div>
@@ -52,18 +92,30 @@
 <script setup>
 import { ref } from 'vue';
 
-// Default description
-const defaultDescription = 'Hover over a step to see its description.';
-const activeDescription = ref(defaultDescription);
-
 // Steps data
 const steps = [
-  { title: 'Brokers Relation', description: 'Establish relationships with brokers to identify opportunities.' },
-  { title: 'Choose CEO', description: 'Select an experienced CEO to lead the acquisition process.' },
-  { title: 'Buy', description: 'Acquire a target company in the selected market.' },
-  { title: 'Merge', description: 'Integrate and align the acquired companies.' },
-  { title: 'Update Tech', description: 'Modernize technology to enhance operational efficiency.' },
-  { title: 'Optimize Structure', description: 'Streamline the company structure for maximum efficiency.' },
-  { title: 'Sell', description: 'Exit by selling the optimized and valuable business.' },
+  {
+    title: 'Relationships',
+    description: 'We leverage relationships with brokers. They know what we are looking for and we have established partnerships.',
+  },
+  {
+    title: 'Rollups',
+    description: 'Explain rollup strategy. This is how we buy a business and consolidate companies in fragmented markets.',
+  },
+  {
+    title: 'Merge',
+    description: 'Explain how mergers work. We retain one of the previous owners as a manager of the new entity to ensure continuity.',
+  },
+  {
+    title: 'Operational',
+    description: 'Focus on financial engineering and operational excellence to optimize efficiency and profitability.',
+  },
+  {
+    title: 'Exit',
+    description: 'We sell the business at a higher multiple because it is now a larger entity with improved processes and profitability.',
+  },
 ];
+
+// Active tab index
+const activeTab = ref(0);
 </script>

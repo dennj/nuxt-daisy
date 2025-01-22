@@ -29,7 +29,7 @@ const navLinks = router.options.routes
   <div class="flex flex-col min-h-screen">
     <!-- Global Header -->
     <header>
-      <div class="navbar bg-neutral text-neutral-content shadow-lg">
+      <div class="navbar shadow-lg">
         <div class="flex-1">
           <a href="/" class="btn btn-ghost normal-case text-xl">
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-2" alt="Pluton Capital" />
@@ -43,7 +43,7 @@ const navLinks = router.options.routes
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             </label>
-            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
               <li v-for="link in navLinks" :key="link.path">
                 <a :href="link.path">{{ link.name }}</a>
               </li>
@@ -51,7 +51,7 @@ const navLinks = router.options.routes
           </div>
           <ul class="menu menu-horizontal px-4 hidden md:flex">
             <li v-for="link in navLinks" :key="link.path">
-              <a href="#" class="hover:bg-neutral-focus hover:text-white">{{ link.name }}</a>
+              <a href="#">{{ link.name }}</a>
             </li>
           </ul>
         </div>
@@ -64,7 +64,7 @@ const navLinks = router.options.routes
     </main>
 
     <!-- Global Footer -->
-    <footer class="footer p-4 bg-neutral text-neutral-content text-center">
+    <footer class="footer p-4 text-center">
       <div class="container mx-auto">
         <p>&copy; 2025 Pluton Capital. All rights reserved.</p>
       </div>
