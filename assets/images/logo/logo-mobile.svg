@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="54"
+   height="54"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="logo-mobile.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.7"
+     inkscape:rotation="1"
+     inkscape:cx="27.072564"
+     inkscape:cy="27.084835"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="1440"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     id="rect5-4"
+     style="fill:#e0115f;stroke-width:1.3068"
+     d="M -3.8853199,-4.8599133 H 60.026984 V 59.979846 H -3.8853199 Z" />
+  <path
+     id="rect5"
+     style="fill:#ffffff;stroke-width:0.874766"
+     d="M 5.414884,5.4382403 H 48.513797 V 48.522409 H 5.414884 Z" />
+  <path
+     d="m 11.550209,8.0345133 q 1.333332,0.053333 3.573331,0.1066666 2.293332,0.053333 4.533331,0.053333 2.559998,0 4.959997,-0.053333 2.399998,-0.053333 3.413331,-0.053333 7.413329,0 11.093327,2.9333314 3.679997,2.933332 3.679997,7.573329 0,1.919999 -0.746666,4.053331 -0.746666,2.079999 -2.559998,3.893331 -1.759999,1.759999 -4.853331,2.879998 -3.093331,1.12 -7.786662,1.12 H 21.41687 v -1.066666 h 4.906663 q 3.146665,0 4.746664,-1.44 1.653332,-1.439999 2.239999,-3.786664 0.639999,-2.346665 0.639999,-5.066664 0,-5.066663 -1.493332,-7.573328 -1.493332,-2.5066656 -5.119997,-2.5066656 -2.079999,0 -2.719998,0.9066656 -0.586667,0.906667 -0.586667,3.679998 v 26.133318 q 0,2.079999 0.426667,3.093332 0.426666,1.013332 1.653332,1.333332 1.226666,0.32 3.626665,0.373333 v 1.173333 q -1.653333,-0.05333 -4.266665,-0.106667 -2.613331,-0.05333 -5.49333,-0.05333 -2.293332,0 -4.479997,0.05333 -2.186665,0.05333 -3.946664,0.106667 v -1.066666 q 1.706665,-0.106667 2.559998,-0.426667 0.853333,-0.319999 1.12,-1.279999 0.319999,-0.959999 0.319999,-2.879998 V 13.687843 q 0,-1.973332 -0.319999,-2.879998 Q 14.96354,9.8478456 14.056874,9.5278458 13.203541,9.1545127 11.550209,9.1011794 Z"
+     id="text5"
+     style="font-weight:bold;font-size:53.3333px;font-family:'Playfair Display', serif;-inkscape-font-specification:'Playfair Display, serif, Bold';fill:#e0115f"
+     aria-label="P" />
+</svg>

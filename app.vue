@@ -1,4 +1,6 @@
 <script setup>
+import logo from '@/assets/images/logo/logo.svg';
+
 useHead({
   title: 'Pluton Capital',
   meta: [
@@ -32,14 +34,15 @@ const navLinks = router.options.routes
       <div class="navbar shadow-lg">
         <div class="flex-1">
           <a href="/" class="btn btn-ghost normal-case text-xl">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-2" alt="Pluton Capital" />
+            <img :src="logo" class="h-8 mr-2" alt="Pluton Capital" />
             Pluton Capital
           </a>
         </div>
         <div class="flex-none">
           <div class="dropdown dropdown-end md:hidden">
             <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             </label>
@@ -64,9 +67,39 @@ const navLinks = router.options.routes
     </main>
 
     <!-- Global Footer -->
-    <footer class="footer p-4 text-center">
-      <div class="container mx-auto">
-        <p>&copy; 2025 Pluton Capital. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white">
+      <!-- Upper Bar -->
+      <div class="bg-gray-900 py-5">
+        <div class="container mx-auto flex items-center justify-between">
+          <!-- Company Name -->
+          <p class="text-lg font-bold">Pluton Capital</p>
+
+          <!-- Navigation Links -->
+          <div class="flex space-x-6">
+            info@pluton.capital
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Bar -->
+      <div class="bg-black py-5">
+        <div class="container mx-auto flex items-center justify-between">
+          <!-- LinkedIn Icon -->
+          <a href="https://www.linkedin.com/company/pluton-capital" target="_blank"
+            class="flex items-center space-x-2 text-white hover:text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8.2 20.5H4.6V9h3.6v11.5zM6.4 7.7c-1.2 0-2.1-.9-2.1-2.1s.9-2.1 2.1-2.1 2.1.9 2.1 2.1-.9 2.1-2.1 2.1zM20.5 20.5h-3.6V14c0-1.5 0-3.4-2.1-3.4-2.1 0-2.4 1.6-2.4 3.3v6.6h-3.6V9h3.4v1.6h.1c.5-.9 1.7-1.8 3.5-1.8 3.8 0 4.5 2.5 4.5 5.7v6z" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <!-- Company Registration -->
+          <p class="text-xs text-white">
+            Incorporated in Republic Of Ireland
+            <a href="https://core.cro.ie/e-commerce/company/5411480"><strong>772965</strong></a>
+          </p>
+        </div>
       </div>
     </footer>
   </div>
