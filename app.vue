@@ -33,16 +33,15 @@ const navLinks = router.options.routes
     <header>
       <div class="navbar shadow-lg">
         <div class="flex-1">
-          <a href="/" class="btn btn-ghost normal-case text-xl">
-            <img :src="logo" class="h-8 mr-2" alt="Pluton Capital" />
+          <a href="/" class="btn btn-ghost normal-case text-xl">  
             Pluton Capital
           </a>
         </div>
         <div class="flex-none">
+          <!-- Mobile Dropdown Menu -->
           <div class="dropdown dropdown-end md:hidden">
             <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             </label>
@@ -52,9 +51,11 @@ const navLinks = router.options.routes
               </li>
             </ul>
           </div>
+
+          <!-- Desktop Menu -->
           <ul class="menu menu-horizontal px-4 hidden md:flex">
             <li v-for="link in navLinks" :key="link.path">
-              <a href="#">{{ link.name }}</a>
+              <a :href="link.path" class="hover:text-primary">{{ link.name }}</a>
             </li>
           </ul>
         </div>
