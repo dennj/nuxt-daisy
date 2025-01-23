@@ -16,7 +16,8 @@
 
         <!-- Hero Image -->
         <div class="md:w-1/2">
-          <NuxtImg img src="/images/kelly.jpg" alt="Hero Image" class="rounded-lg shadow-lg w-full h-auto" />
+          <NuxtImg img src="/images/kelly.jpg" alt="Hero Image" width="1200" height="800"
+            class="rounded-lg shadow-lg w-full h-auto" />
         </div>
       </div>
     </section>
