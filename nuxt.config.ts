@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap', '@nuxt/image'],
 
   sitemap: <Partial<SitemapModuleOptions>>{
     hostname: 'https://pluton.capital',
