@@ -16,7 +16,7 @@
 
         <!-- Hero Image -->
         <div class="md:w-1/2">
-          <img src="@/assets/images/kelly.webp" alt="Hero Image" class="rounded-lg shadow-lg w-full h-auto" />
+          <img src="@/assets/images/kelly.jpg" alt="Hero Image" class="rounded-lg shadow-lg w-full h-auto" />
         </div>
       </div>
     </section>
