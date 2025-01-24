@@ -17,6 +17,10 @@ module.exports = {
           lg: '1200px',
         },
       },
+      boxShadow: {
+        'blue-lg': '0 10px 15px -3px #1d5e8a', // Customize with your preferred blue
+        'blue-xl': '0 20px 25px -5px #1d5e8a', // For larger shadows
+      },
     },
   },
   plugins: [

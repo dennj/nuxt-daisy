@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto py-12">
     <!-- Page Title -->
-    <h1 class="text-4xl font-bold text-center mb-8">Our Team - Page to hide for now.</h1>
+    <h1 class="text-4xl font-bold text-center mb-8">Our Team</h1>
     <!-- Team Section -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Team Member -->
@@ -56,7 +56,7 @@ const team = [
     id: 1,
     name: 'Dennj Osele',
     position: 'CEO & Founder',
-    description: 'Dennj leads the company with 20 years of experience in private equity and mergers.',
+    description: 'Dennj Osele is a technology-driven problem solver who believes that innovation and data-driven decision-making are key to modernizing service-based businesses. With experience as a Data Scientist at Amazon and as the founder of an AI-based e-commerce tool, Dennj combines technical expertise with entrepreneurial vision. At Pluton Capital, Dennj drives digital transformation and operational efficiency in the businesses Pluton acquires. His focus on leveraging technology to streamline processes ensures that acquired companies achieve scalable growth and reduced overheads. Dennj is passionate about fostering innovation and helping businesses realize their full potential through cutting-edge analytics and process optimization.',
     image: DennjOseleImage,
     linkedin: 'https://www.linkedin.com/in/dennjosele',
   },
@@ -64,7 +64,7 @@ const team = [
     id: 2,
     name: 'Raghav Bhola',
     position: 'Financial Officer',
-    description: 'Raghav manages financial operations and investor relations.',
+    description: 'Raghav Bhola is a financial analytics expert with a strong track record in identifying sector trends and making strategic investment decisions. With extensive experience in venture capital and lower mid-market private equity in Ireland and emerging markets, Raghav brings invaluable expertise to Pluton Capital. At Pluton Capital, Raghav is responsible for driving the firm’s consolidation strategy, leveraging his strong network with deal brokers and research capabilities. His ability to identify high-potential businesses in fragmented markets ensures a robust pipeline of deals and successful execution of the firm’s investment vision. Raghav is passionate about building scalable businesses and creating value through meticulous financial engineering and strategic growth initiatives.',
     image: RaghavBholaImage,
     linkedin: 'https://www.linkedin.com/in/raghavbhola',
   },
