@@ -29,6 +29,9 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Problem Card 1 -->
           <div class="card shadow-blue-lg hover:shadow-blue-xl transition-shadow bg-base-200">
+            <figure class="w-full">
+              <NuxtImg src="/images/puzzle.jpg" alt="Fragmented Market" class="w-full h-48 object-cover rounded-t-lg" />
+            </figure>
             <div class="card-body">
               <h4 class="text-xl font-bold mb-4 text-primary">Fragmented Market</h4>
               <p class="text-base-content">
@@ -39,6 +42,9 @@
 
           <!-- Problem Card 2 -->
           <div class="card shadow-blue-lg hover:shadow-blue-xl transition-shadow bg-base-200">
+            <figure class="w-full">
+              <NuxtImg src="/images/retire.jpg" alt="Fragmented Market" class="w-full h-48 object-cover rounded-t-lg" />
+            </figure>
             <div class="card-body">
               <h4 class="text-xl font-bold mb-4 text-primary">Aging Business Owners</h4>
               <p class="text-base-content">
@@ -49,6 +55,9 @@
 
           <!-- Problem Card 3 -->
           <div class="card shadow-blue-lg hover:shadow-blue-xl transition-shadow bg-base-200">
+            <figure class="w-full">
+              <NuxtImg src="/images/euro.jpg" alt="Fragmented Market" class="w-full h-48 object-cover rounded-t-lg" />
+            </figure>
             <div class="card-body">
               <h4 class="text-xl font-bold mb-4 text-primary">Scaling Challenges</h4>
               <p class="text-base-content">
