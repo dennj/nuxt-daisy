@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="bg-base-200 text-base-content py-40">
+    <section class="bg-base-200 text-base-content min-h-[80vh] py-10 flex items-center">
       <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <!-- Text Content -->
         <div class="text-center md:text-left mb-8 md:mb-0 md:w-1/2 md:mr-4">
@@ -23,7 +23,7 @@
     </section>
 
     <!-- Problem Section -->
-    <section id="problems" class="py-40 bg-base-100">
+    <section id="problems" class="min-h-[80vh] py-10 flex items-center bg-base-100">
       <div class="container mx-auto text-center">
         <h3 class="text-3xl font-bold mb-8 text-base-content">Problems in the Irish Service Market</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -61,7 +61,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-40 bg-base-200">
+    <section id="about" class="min-h-[80vh] py-10 flex items-center bg-base-200">
       <div class="container mx-auto text-center">
         <h3 class="text-3xl font-bold mb-8 text-base-content">About Pluton Capital</h3>
         <p class="text-base-content/90 text-lg mb-16">
