@@ -5,30 +5,34 @@
       <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <!-- Text Content -->
         <div class="text-center md:text-left mb-8 md:mb-0 md:w-1/2 md:mr-4">
-          <h2 class="text-4xl font-bold mb-6">Empowering Growth Through Strategic Investments</h2>
-          <p class="mb-8 text-lg">
-            At Pluton Capital, we drive innovation and deliver value through tailored financial solutions.
+          <h1 class="text-7xl font-bold mb-4 text-secondary">Pluton Capital</h1>
+          <h2 class="text-4xl font-bold mb-6 text-gray-900">Building Strong and Consistent Services Businesses</h2>
+          <p class="mb-8 text-lg text-gray-700">
+            Pluton Capital specializes in rollup (Buy&Merge) strategies within fragmented service markets, driving value
+            by
+            increasing multiples and providing business strategy and technological expertise.
           </p>
-          <button class="btn btn-primary btn-lg">
-            Learn More
-          </button>
+          <a href="mailto:info@pluton.capital?subject=Business Inquiry&body=Dear Pluton Capital,%0D%0A%0D%0AI am an Investor/Broker/Seller working for ... %0D%0A%0D%0AI would like to inquire about ... %0D%0A%0D%0AThank you,%0D%0A[Your Name]"
+            class="btn btn-primary btn-lg">
+            Get In Touch
+          </a>
         </div>
 
         <!-- Hero Image -->
         <div class="md:w-1/2 md:ml-4">
           <NuxtImg src="/images/kelly.jpg" alt="Hero Image" width="1200" height="800"
-            class="rounded-lg shadow-lg w-full h-auto" />
+            class="rounded-lg w-full h-auto" />
         </div>
       </div>
     </section>
 
     <!-- Problem Section -->
-    <section id="problems" class="min-h-[80vh] py-10 flex items-center bg-base-100">
+    <section id="problems" class="min-h-[80vh] py-10 flex items-center bg-primary">
       <div class="container mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-8 text-base-content">Problems in the Irish Service Market</h3>
+        <h3 class="text-3xl font-bold mb-8 text-gray-100">Problems in the Irish Service Market</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Problem Card 1 -->
-          <div class="card shadow-blue-lg hover:shadow-blue-xl transition-shadow bg-base-200">
+          <div class="card bg-base-200">
             <figure class="w-full">
               <NuxtImg src="/images/puzzle.jpg" alt="Fragmented Market" class="w-full h-48 object-cover rounded-t-lg" />
             </figure>
@@ -41,7 +45,7 @@
           </div>
 
           <!-- Problem Card 2 -->
-          <div class="card shadow-blue-lg hover:shadow-blue-xl transition-shadow bg-base-200">
+          <div class="card bg-base-200">
             <figure class="w-full">
               <NuxtImg src="/images/retire.jpg" alt="Fragmented Market" class="w-full h-48 object-cover rounded-t-lg" />
             </figure>
@@ -54,7 +58,7 @@
           </div>
 
           <!-- Problem Card 3 -->
-          <div class="card shadow-blue-lg hover:shadow-blue-xl transition-shadow bg-base-200">
+          <div class="card bg-base-200">
             <figure class="w-full">
               <NuxtImg src="/images/euro.jpg" alt="Fragmented Market" class="w-full h-48 object-cover rounded-t-lg" />
             </figure>
@@ -92,13 +96,23 @@
         </div>
 
         <!-- Description Box -->
-        <div class="card w-full max-w-3xl mx-auto bg-base-100 shadow-blue-lg">
+        <div class="card w-full max-w-3xl mx-auto bg-base-100">
           <div class="card-body">
             <p class="text-lg text-base-content">{{ steps[activeTab].description }}</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Call to Action --><!--
+    <section id="about" class="min-h-[50vh] py-10 flex items-center bg-base-200">
+      <div class="container mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-8 text-base-content">Work with us!</h3>
+        <p class="text-base-content/90 text-lg mb-16">
+          ...
+        </p>
+      </div>
+    </section> -->
   </div>
 </template>
 

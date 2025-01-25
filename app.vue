@@ -31,9 +31,9 @@ const navLinks = router.options.routes
   <div class="flex flex-col min-h-screen">
     <!-- Global Header -->
     <header>
-      <div class="navbar shadow-lg">
+      <div class="navbar bg-gray-900 text-white">
         <div class="flex-1">
-          <a href="/" class="btn btn-ghost normal-case text-xl">  
+          <a href="/" class="btn btn-ghost normal-case text-xl">
             Pluton Capital
           </a>
         </div>
@@ -45,9 +45,11 @@ const navLinks = router.options.routes
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             </label>
-            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 rounded-box w-52 bg-gray-800">
               <li v-for="link in navLinks" :key="link.path">
-                <a :href="link.path">{{ link.name }}</a>
+                <a :href="link.path">
+                  {{ link.name }}
+                </a>
               </li>
             </ul>
           </div>

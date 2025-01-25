@@ -32,11 +32,11 @@ module.exports = {
     themes: [
       {
         'pluton': {
-          'primary': '#1d5e8a', // Navy Blue - Primary color representing trust and professionalism
+          'primary': '#143d5c', // Navy Blue - Primary color representing trust and professionalism
           'primary-focus': '#FF00FF', // Magenta - Focus color for primary elements (hover, active)
           'primary-content': '#ffffff', // White - Text color for primary elements
 
-          'secondary': '#00FF00', // Lime Green - Secondary color for complementary emphasis
+          'secondary': '#1d5e8a', // Light Navy
           'secondary-focus': '#00FF00', // Lime Green - Focus color for secondary elements
           'secondary-content': '#ffffff', // White - Text color for secondary elements
 
