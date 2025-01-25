@@ -12,10 +12,10 @@
             by
             increasing multiples and providing business strategy and technological expertise.
           </p>
-          <a href="mailto:info@pluton.capital?subject=Business Inquiry&body=Dear Pluton Capital,%0D%0A%0D%0AI am an Investor/Broker/Seller working for ... %0D%0A%0D%0AI would like to inquire about ... %0D%0A%0D%0AThank you,%0D%0A[Your Name]"
-            class="btn btn-primary btn-lg">
+          <!-- NuxtLink for navigation -->
+          <NuxtLink to="/contact" class="btn btn-primary btn-lg">
             Get In Touch
-          </a>
+          </NuxtLink>
         </div>
 
         <!-- Hero Image -->

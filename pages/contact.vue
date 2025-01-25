@@ -13,7 +13,10 @@
         <ul class="space-y-2 text-gray-700">
           <li class="flex items-center space-x-2">
             <strong class="text-primary">Email:</strong>
-            <a href="mailto:info@pluton.capital" class="link link-primary">info@pluton.capital</a>
+            <a href="mailto:info@pluton.capital?subject=Business Inquiry&body=Dear Pluton Capital,%0D%0A%0D%0AI am an Investor/Broker/Seller working for ... %0D%0A%0D%0AI would like to inquire about ... %0D%0A%0D%0AThank you,%0D%0A[Your Name]"
+              class="link link-primary">
+              info@pluton.capital
+            </a>
           </li>
           <li class="flex items-center space-x-2">
             <strong class="text-primary">Phone:</strong>
@@ -33,13 +36,9 @@
 
       <!-- Embedded Map (Google Maps) -->
       <div class="h-64 md:h-full rounded-lg overflow-hidden">
-        <iframe
-          class="w-full h-full"
+        <iframe class="w-full h-full"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.933905208798!2d-6.245833684007658!3d53.34881277997988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80df7c1625%3A0x8c9075eab96c299b!2sThe%20CHQ%20Building!5e0!3m2!1sen!2sie!4v1674217893000!5m2!1sen!2sie"
-          allowfullscreen="true"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+          allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
