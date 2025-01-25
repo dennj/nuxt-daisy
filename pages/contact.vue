@@ -20,7 +20,7 @@
           </li>
           <li class="flex items-center space-x-2">
             <strong class="text-primary">Phone:</strong>
-            <a href="tel:+393338751965" class="link link-primary">+39 333 875 1965</a>
+            <a href="tel:+353852569755" class="link link-primary">+353 85 256 9755</a>
           </li>
           <li>
             <strong class="text-primary">Address:</strong>
