@@ -25,16 +25,16 @@
       </p>
       <ul class="list-disc pl-5 space-y-2 text-gray-700">
         <li>
-          **Tax Efficiency:** Ireland offers competitive corporate tax rates, making it an attractive destination for businesses and investors alike.
+          <strong>Tax Efficiency:</strong> Ireland offers competitive corporate tax rates, making it an attractive destination for businesses and investors alike.
         </li>
         <li>
-          **Growing Economy:** With a strong GDP growth rate, Ireland continues to be a leader in economic recovery and development in Europe.
+          <strong>Growing Economy:</strong> With a strong GDP growth rate, Ireland continues to be a leader in economic recovery and development in Europe.
         </li>
         <li>
-          **Skilled Workforce:** Ireland has a highly educated and skilled workforce, making it a center for innovation and entrepreneurship.
+          <strong>Skilled Workforce:</strong> Ireland has a highly educated and skilled workforce, making it a center for innovation and entrepreneurship.
         </li>
         <li>
-          **Access to EU Markets:** Businesses in Ireland benefit from full access to the European Union market.
+          <strong>Access to EU Markets:</strong> Businesses in Ireland benefit from full access to the European Union market.
         </li>
       </ul>
     </section>
