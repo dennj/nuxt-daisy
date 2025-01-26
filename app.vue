@@ -91,7 +91,7 @@ const navLinks = router.options.routes
 
       <!-- Lower Bar -->
       <div class="bg-black py-5">
-        <div class="container mx-auto flex items-center justify-between">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <!-- Social Links -->
           <div class="flex space-x-6">
             <!-- LinkedIn -->
@@ -119,7 +119,7 @@ const navLinks = router.options.routes
           </div>
 
           <!-- Company Registration -->
-          <p class="text-xs text-white">
+          <p class="text-xs text-white text-center md:text-left">
             Incorporated in Republic Of Ireland
             <a href="https://core.cro.ie/e-commerce/company/5411480"><strong>772965</strong></a>
           </p>
