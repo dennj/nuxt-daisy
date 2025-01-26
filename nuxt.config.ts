@@ -27,7 +27,13 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/content', '@nuxtjs/sitemap', '@nuxt/image'],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap', '@nuxt/image', '@nuxtjs/supabase'],
+
+  supabase: {
+    url: process.env.SUPABASE_URL,
+    key: process.env.SUPABASE_KEY,
+    redirect: false
+  },
 
   sitemap: <Partial<SitemapModuleOptions>>{
     hostname: 'https://pluton.capital',

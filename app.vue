@@ -1,5 +1,5 @@
-<script setup>
-import logo from '@/assets/images/logo/logo.svg';
+<script setup lang="ts">
+const user = useSupabaseUser()
 
 useHead({
   title: 'Pluton Capital',
@@ -33,9 +33,10 @@ const navLinks = router.options.routes
     <header>
       <div class="navbar bg-gray-900 text-white">
         <div class="flex-1">
-          <a href="/" class="btn btn-ghost normal-case text-xl">
+          <a href="/" class="btn btn-ghost normal-case text-2xl">
             Pluton Capital
           </a>
+          <p v-if="user" class="text-lg text-red">Welcome, {{ user.user_metadata.full_name || 'User' }}!</p>
         </div>
         <div class="flex-none">
           <!-- Mobile Dropdown Menu -->
@@ -79,7 +80,10 @@ const navLinks = router.options.routes
 
           <!-- Navigation Links -->
           <div class="flex space-x-6">
-            info@pluton.capital
+            <a href="mailto:info@pluton.capital?subject=Business Inquiry&body=Dear Pluton Capital,%0D%0A%0D%0AI am an Investor/Broker/Seller working for ... %0D%0A%0D%0AI would like to inquire about ... %0D%0A%0D%0AThank you,%0D%0A[Your Name]"
+              class="link text-white">
+              info@pluton.capital
+            </a>
           </div>
         </div>
       </div>

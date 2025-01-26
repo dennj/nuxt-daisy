@@ -1,27 +1,14 @@
-<script setup>
-import { useRouter } from 'vue-router';
-const router = useRouter();
+<script setup lang="ts">
+const user = useSupabaseUser()
+const { auth } = useSupabaseClient()
 
-// Supabase client from the Nuxt plugin
-const { $supabase } = useNuxtApp();
+const redirectTo = `${useRuntimeConfig().public.baseUrl}/confirm`
 
-// Handle Google Login
-async function handleGoogleLogin() {
-  try {
-    const { data, error } = await $supabase.auth.signInWithOAuth({
-      provider: 'google',
-    });
-
-    if (error) throw error;
-
-    // Redirect after successful login
-    console.log('Login successful:', data);
-    router.push('/');
-  } catch (error) {
-    console.error('Error logging in:', error.message);
-    alert('Login failed: ' + error.message);
+watchEffect(() => {
+  if (user.value) {
+    //navigateTo('/login')
   }
-}
+})
 </script>
 
 <template>
@@ -32,7 +19,7 @@ async function handleGoogleLogin() {
       <p class="text-lg text-gray-600 mb-6">Sign in with your Google account to continue.</p>
 
       <!-- Google Login Button -->
-      <button @click="handleGoogleLogin" class="btn btn-primary btn-lg w-full">
+      <button  @click="auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })" class="btn btn-primary btn-lg w-full">
         Login with Google
       </button>
 
