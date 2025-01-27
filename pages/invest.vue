@@ -69,11 +69,11 @@
       </div>
     </section>
 
-    <!-- Minimum Check Size -->
+    <!-- Minimum Cheque Size -->
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-4">Minimum Investment</h2>
       <p class="text-gray-700">
-        To invest with Pluton Capital, the minimum check size is 20,000 EUR. This ensures that we can effectively deploy capital into scalable opportunities while maintaining efficiency in our operations.
+        To invest with Pluton Capital, the minimum cheque size is 20,000 EUR. This ensures that we can effectively deploy capital into scalable opportunities while maintaining efficiency in our operations.
       </p>
     </section>
 

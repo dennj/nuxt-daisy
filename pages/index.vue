@@ -96,7 +96,7 @@
         </div>
 
         <!-- Description Box -->
-        <div class="card w-full max-w-3xl mx-auto bg-base-100">
+        <div class="card w-full max-w-3xl mx-auto bg-base-100 border-2 border-secondary">
           <div class="card-body">
             <p class="text-lg text-base-content">{{ steps[activeTab].description }}</p>
           </div>
@@ -123,23 +123,23 @@ import { ref } from 'vue';
 const steps = [
   {
     title: 'Relationships',
-    description: 'We leverage relationships with brokers. They know what we are looking for and we have established partnerships.',
+    description: 'Pluton Capital works closely with brokers who understand the market and the types of businesses we aim to acquire. These brokers help identify businesses with solid operations but limited ability to grow. By relying on their knowledge and connections, we focus on finding businesses that are a good fit for our strategy of merging companies to improve efficiency and build value.',
   },
   {
     title: 'Rollups',
-    description: 'Explain rollup strategy. This is how we buy a business and consolidate companies in fragmented markets.',
+    description: 'Our strategy involves acquiring multiple small businesses within a fragmented market and consolidating them into a single, larger entity. By combining these businesses, we create operational efficiencies, reduce costs, and establish a stronger market presence. This approach not only enhances profitability through streamlined operations but also increases the overall enterprise value, as a larger, well-structured business is more attractive to investors or buyers. Rollups allow smaller companies to benefit from shared resources, improved technology, and strategic leadership, positioning them for long-term growth and scalability.',
   },
   {
     title: 'Merge',
-    description: 'Explain how mergers work. We retain one of the previous owners as a manager of the new entity to ensure continuity.',
+    description: "When merging companies, we retain one of the previous owners as a manager of the newly consolidated entity to ensure continuity and leverage their expertise. To align their interests with ours, we offer them a share in the new business. During the integration process, we focus on standardizing software, procedures, and operations across all businesses to enhance efficiency. Overheads are reduced by consolidating redundant functions, while operations are streamlined to drive profitability. Throughout this phase, we work closely with the acquired businesses' previous owners during a transition period to ensure a smooth and effective merger.",
   },
   {
     title: 'Operational',
-    description: 'Focus on financial engineering and operational excellence to optimize efficiency and profitability.',
+    description: 'We improve operations by focusing on financial engineering and operational excellence to enhance efficiency and profitability. Leveraging our strong tech and AI expertise, we streamline processes and implement data-driven improvements. We invest in new equipment to modernize operations and unify the branding, using design expertise to elevate marketing efforts. Additionally, we establish a robust organizational structure that ensures no individual is irreplaceable, promoting continuity and long-term stability within the business.',
   },
   {
     title: 'Exit',
-    description: 'We sell the business at a higher multiple because it is now a larger entity with improved processes and profitability.',
+    description: 'Small businesses typically face lower valuation multiples because they are highly dependent on the owner, lack access to capital, and are perceived as riskier investments. By merging these smaller companies into a larger entity, Pluton Capital creates a business with a solid management structure, access to capital, and greater stability. Larger companies are seen as more reliable and scalable, which makes them far more appealing to buyers. Additionally, our network of brokers collaborates to identify suitable buyers, ensuring a smooth exit at a significantly higher valuation multiple.',
   },
 ];
 
