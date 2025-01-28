@@ -14,7 +14,7 @@
           <div class="card-body p-6">
             <h2 class="card-title text-primary text-2xl font-semibold">Project Clean</h2>
             <p class="text-gray-900 mt-4">
-              Acquiring three leading players, with a total of 7 locations and a phone app for laundry and dry cleaning.
+              Acquiring three leading players, with a total of 8 locations and a phone app for laundry and dry cleaning.
               Promoters are offered 20% equity with reduced upfront consideration, leveraging their expertise in the new
               business. Four additional locations are under active negotiation, bringing the total to over 11 locations in
               three months.
