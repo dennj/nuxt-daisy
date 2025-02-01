@@ -9,10 +9,8 @@
           <h2 class="text-4xl font-bold mb-6 text-gray-900">Building Strong and Consistent Services Businesses</h2>
           <p class="mb-8 text-lg text-gray-700">
             Pluton Capital specializes in rollup (Buy&Merge) strategies within fragmented service markets, driving value
-            by
-            increasing multiples and providing business strategy and technological expertise.
+            by increasing multiples and providing business strategy and technological expertise.
           </p>
-          <!-- NuxtLink for navigation -->
           <NuxtLink to="/contact" class="btn btn-primary btn-lg">
             Get In Touch
           </NuxtLink>
@@ -82,23 +80,21 @@
           investments and operational excellence.
         </p>
 
-        <!-- DaisyUI Tabs -->
-        <div class="flex flex-wrap justify-center gap-4 mb-8">
-          <button v-for="(step, index) in steps" :key="index"
-            class="tab p-4 w-40 h-20 flex items-center justify-center text-center font-bold rounded-lg cursor-pointer transition-all text-base-content border-2"
-            :class="{
-              'bg-primary text-primary-content': activeTab === index,
-              'bg-base-100 text-base-content': activeTab !== index,
-              'hover:bg-primary hover:text-primary-content': activeTab !== index,
-            }" @mouseover="activeTab = index">
-            {{ step.title }}
-          </button>
-        </div>
-
-        <!-- Description Box -->
-        <div class="card w-full max-w-3xl mx-auto bg-base-100 border-2 border-secondary">
-          <div class="card-body">
-            <p class="text-lg text-base-content">{{ steps[activeTab].description }}</p>
+        <div class="max-w-3xl mx-auto">
+          <div class="space-y-2">
+            <div v-for="(step, index) in steps" :key="index"
+              class="collapse collapse-arrow border border-secondary bg-base-100 rounded-lg">
+              <input type="radio" name="faq-accordion" class="peer hidden" :id="'faq' + index" v-model="activeTab"
+                :value="index" />
+              <label :for="'faq' + index"
+                class="collapse-title text-xl font-medium text-primary peer-checked:bg-secondary peer-checked:text-secondary-content cursor-pointer"
+                @mouseover="activeTab = index">
+                {{ step.title }}
+              </label>
+              <div class="collapse-content">
+                <p class="text-base-content p-4">{{ step.description }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
