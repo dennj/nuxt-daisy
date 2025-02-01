@@ -100,15 +100,38 @@
       </div>
     </section>
 
-    <!-- Call to Action --><!--
-    <section id="about" class="min-h-[50vh] py-10 flex items-center bg-base-200">
-      <div class="container mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-8 text-base-content">Work with us!</h3>
-        <p class="text-base-content/90 text-lg mb-16">
-          ...
-        </p>
+
+    <!-- Questions & Answers -->
+    <section class="text-center mb-10">
+      <div class="container mx-auto bg-gray-100 rounded-lg p-6">
+        <h3 class="text-3xl font-bold text-secondary mb-4">What is Pluton Capital?</h3>
+        <div class="text-gray-700 text-lg leading-relaxed">
+          Pluton Capital is a private equity firm based in Ireland, established in 2023. We specialize in executing
+          roll-up strategies within fragmented service markets, leveraging our finance, technology, and AI expertise to
+          drive company growth. Our funding is sourced from private investors who buy shares in the company. Unlike
+          traditional private equity firms, we prioritize agility and data-driven decision-making, minimizing
+          bureaucratic processes to respond swiftly to market opportunities. Notably, we are the only private equity
+          firm in Dublin focusing on roll-up strategies in the service industry.
+        </div>
       </div>
-    </section> -->
+    </section>
+
+    <section class="text-center mb-10">
+      <div class="container mx-auto bg-gray-100 rounded-lg p-6">
+        <h3 class="text-3xl font-bold text-secondary mb-4">What is Private Equity?</h3>
+        <div class="text-gray-700 text-lg leading-relaxed">
+          Private equity (PE) refers to investments made in privately held companies that are not publicly traded on
+          stock exchanges. PE firms, like Pluton Capital, raise capital from investors to acquire, manage, and grow
+          businesses before eventually selling them at a profit. The goal is to grow value through strategic
+          improvements, financial restructuring, and operational efficiencies. Each private equity company follows
+          different investing strategies and specializes in specific market segments.
+          A widely recommended introduction to the world of private equity is "King of Capital: The Remarkable Rise,
+          Fall, and Rise Again of Steve Schwarzman and Blackstone" by David Carey and John E. Morris. This book provides
+          a compelling look behind the scenes at one of the world’s most influential private equity firms, detailing the
+          industry’s evolution and strategies.
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
