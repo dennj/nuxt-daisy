@@ -45,7 +45,8 @@
       <div class="container mx-auto text-center">
         <h3 class="text-3xl font-bold mb-8 text-base-content">About Pluton Capital</h3>
         <p class="text-base-content/90 text-lg mb-16">
-          Pluton Capital is a private equity firm focused on consolidating SMEs in Ireland's service sector and driving tech adoption.        </p>
+          Pluton Capital is a private equity firm focused on consolidating SMEs
+          in Ireland's service sector and driving tech adoption. </p>
 
         <!-- FAQ Style Accordion -->
         <div class="max-w-3xl mx-auto space-y-2">
@@ -84,19 +85,118 @@
     <section class="text-center mb-10">
       <div class="container mx-auto bg-gray-100 rounded-lg p-6">
         <h3 class="text-3xl font-bold text-secondary mb-4">What is Private Equity?</h3>
-        <p class="text-gray-700 text-lg leading-relaxed">
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
           Private equity (PE) refers to investments in privately held companies that are not publicly traded. PE firms
           like Pluton Capital raise capital from investors to acquire, manage, and grow businesses before selling them
-          at a profit. Each private equity company follows different investing strategies and specializes in specific market segments.
-          A highly recommended book for understanding private equity is
+          at a profit. Each private equity company follows different investing strategies and specializes in specific
+          market segments. A highly recommended book for understanding private equity is
           <a href="https://a.co/d/j827wdk" target="_blank" class="text-primary underline hover:text-secondary">
-            "King of Capital: The Remarkable Rise, Fall, and Rise Again of Steve Schwarzman and Blackstone"
+            "King of Capital by David Carey and John E. Morris"
           </a>
-          by David Carey and John E. Morris. This book provides a compelling look behind the scenes at one of the world’s
-          most influential private equity firms, detailing the industry’s evolution and strategies.
+          . This book provides a compelling look behind the scenes at one of the
+          world’s most influential private equity firms, detailing the industry’s evolution and strategies.
         </p>
+
+        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+          In the Ireland private equity landscape, several firms have established significant portfolios:
+        </p>
+
+        <ul class="text-left mx-auto max-w-2xl space-y-4">
+          <li>
+            <a href="https://www.blackstone.com" target="_blank" class="text-primary font-semibold hover:underline">
+              Blackstone
+            </a> - One of the largest global PE firms, investing in real estate, infrastructure, and private equity.
+          </li>
+          <li>
+            <a href="https://renatus.ie" target="_blank" class="text-primary font-semibold hover:underline">
+              Renatus Capital Partners
+            </a> - Boutique firm investing in Irish & UK companies with global ambitions (€1B enterprise value).
+          </li>
+          <li>
+            <a href="https://mmlcapital.ie" target="_blank" class="text-primary font-semibold hover:underline">
+              MML Capital Ireland
+            </a> - Focuses on Irish SMEs, supporting founders and management teams (€270M AUM).
+          </li>
+          <li>
+            <a href="https://cardinalcapitalgroup.com" target="_blank"
+              class="text-primary font-semibold hover:underline">
+              Cardinal Capital Group
+            </a> - Invests in leading Irish companies to accelerate growth and scale.
+          </li>
+          <li>
+            <a href="https://meliorequity.com" target="_blank" class="text-primary font-semibold hover:underline">
+              Melior Equity Partners
+            </a> - Works with motivated Irish business owners, driving strategic investments.
+          </li>
+          <li>
+            <a href="https://elkstonepartners.com" target="_blank" class="text-primary font-semibold hover:underline">
+              Elkstone
+            </a> - Invests across multiple sectors, including real estate, private equity, and venture capital.
+          </li>
+          <li>
+            <a href="https://pluton.capital" target="_blank" class="text-primary font-semibold hover:underline">
+              Pluton Capital
+            </a> - Specializes in SME rollup in Ireland's service sector and growth through tech adoption.
+          </li>
+          <li>
+            <a href="https://waterlandpe.com" target="_blank" class="text-primary font-semibold hover:underline">
+              Waterland Private Equity
+            </a> - Focuses on buy-and-build strategies in multiple countries, including Ireland.
+          </li>
+          <li>
+            <a href="https://abven.com" target="_blank" class="text-primary font-semibold hover:underline">
+              Atlantic Bridge
+            </a> - Specializes in technology investments, supporting high-growth tech companies.
+          </li>
+          <li>
+            <a href="https://venturewave.com" target="_blank" class="text-primary font-semibold hover:underline">
+              VentureWave Capital
+            </a> - Focuses on high-potential startups and impact investing.
+          </li>
+          <li>
+            <a href="https://developmentcapital.ie" target="_blank" class="text-primary font-semibold hover:underline">
+              Development Capital
+            </a> - Provides minority investments in Irish SMEs to scale while maintaining founder control.
+          </li>
+          <li>
+            <a href="https://serobavc.com" target="_blank" class="text-primary font-semibold hover:underline">
+              Seroba Life Sciences
+            </a> - A venture capital firm investing in biotech and medtech companies.
+          </li>
+          <li>
+            <a href="https://biavest.com" target="_blank" class="text-primary font-semibold hover:underline">
+              Biavest
+            </a> - Specializes in buyouts of food companies, focusing on scaling operations.
+          </li>
+          <li>
+            <a href="https://woodberrycapital.com" target="_blank" class="text-primary font-semibold hover:underline">
+              Woodberry Capital
+            </a> - A long-term investment firm focusing on sustainable businesses.
+          </li>
+          <li>
+            <a href="https://broadlake.ie" target="_blank" class="text-primary font-semibold hover:underline">
+              Broadlake
+            </a> - Invests in sustainable businesses with a long-term value creation strategy.
+          </li>
+          <li>
+            <a href="https://centrusfinancial.com" target="_blank" class="text-primary font-semibold hover:underline">
+              Centrus
+            </a> - Specializes in sustainable investment strategies with a long-term focus.
+          </li>
+          <li>
+            <a href="https://actventure.capital" target="_blank" class="text-primary font-semibold hover:underline">
+              Act Venture Capital
+            </a> - Focuses on early-stage startups, backing high-growth tech companies.
+          </li>
+          <li>
+            <a href="https://causewaycapital.eu" target="_blank" class="text-primary font-semibold hover:underline">
+              Causeway Capital
+            </a> - Invests in growing businesses, providing strategic guidance and capital.
+          </li>
+        </ul>
       </div>
     </section>
+
   </div>
 </template>
 
