@@ -58,7 +58,7 @@
           <!-- Problem Card 3 -->
           <div class="card bg-base-200">
             <figure class="w-full">
-              <NuxtImg src="/images/euro.jpg" alt="Fragmented Market" class="w-full h-48 object-cover rounded-t-lg" />
+              <NuxtImg src="/images/scale.jpg" alt="Fragmented Market" class="w-full h-48 object-cover rounded-t-lg" />
             </figure>
             <div class="card-body">
               <h4 class="text-xl font-bold mb-4 text-primary">Scaling Challenges</h4>
