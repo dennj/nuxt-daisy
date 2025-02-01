@@ -1,7 +1,7 @@
 module.exports = {
   content: [
     './pages/**/*.{vue,js}',
-    './components/**/*.{vue,js}',
+    './components/**/*.{vue,js,ts}',
     './layouts/**/*.{vue,js}',
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
@@ -27,7 +27,6 @@ module.exports = {
     require('daisyui'),
     require('@tailwindcss/typography')
   ],
-  plugins: [require('daisyui')],
   daisyui: {
     themes: [
       {

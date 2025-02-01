@@ -18,8 +18,6 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
   },
 
-  css: ['@/assets/css/main.css'],
-
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -27,7 +25,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/content', '@nuxtjs/sitemap', '@nuxt/image', '@nuxtjs/supabase'],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap', '@nuxt/image', '@nuxtjs/supabase', '@nuxtjs/tailwindcss'],
 
   supabase: {
     url: process.env.SUPABASE_URL,
