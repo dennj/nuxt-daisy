@@ -8,8 +8,8 @@
           <h1 class="text-7xl font-bold mb-4 text-secondary">Pluton Capital</h1>
           <h2 class="text-4xl font-bold mb-6 text-gray-900">Building Strong and Consistent Service Businesses</h2>
           <p class="mb-8 text-lg text-gray-700">
-            Pluton Capital specializes in rollup (Buy & Merge) strategies within fragmented service markets, increasing
-            value through scale, business strategy, and technological expertise.
+            Pluton Capital specializes in roll-up (Buy & Merge) strategies within fragmented service markets, increasing
+            value through scale, business strategy, and technology adoption.
           </p>
           <NuxtLink to="/contact" class="btn btn-primary btn-lg">Get In Touch</NuxtLink>
         </div>
@@ -24,7 +24,7 @@
 
     <!-- Problem Section -->
     <section id="problems" class="min-h-[80vh] py-10 flex items-center bg-primary">
-      <div class="container mx-auto text-center">
+      <div class="text-lg container mx-auto text-center">
         <h3 class="text-3xl font-bold mb-8 text-gray-100">Problems in the Irish Service Market</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div v-for="problem in problems" :key="problem.title" class="card bg-base-200">
@@ -42,9 +42,9 @@
 
     <!-- About Section -->
     <section id="about" class="min-h-[80vh] py-10 flex items-center bg-base-200">
-      <div class="container mx-auto text-center">
+      <div class="text-lg container mx-auto text-center">
         <h3 class="text-3xl font-bold mb-8 text-base-content">About Pluton Capital</h3>
-        <p class="text-base-content/90 text-lg mb-16">
+        <p class="text-base-content/90 mb-16">
           Pluton Capital is a private equity firm focused on consolidating SMEs
           in Ireland's service sector and driving tech adoption. </p>
 
@@ -68,7 +68,7 @@
     </section>
 
     <!-- Questions & Answers -->
-    <section class="text-center mb-10">
+    <section class="text-center mb-10 max-w-2xl mx-auto p-10">
       <div class="container mx-auto bg-gray-100 rounded-lg p-6">
         <h3 class="text-3xl font-bold text-secondary mb-4">What is Pluton Capital?</h3>
         <p class="text-gray-700 text-lg leading-relaxed">
@@ -82,7 +82,7 @@
       </div>
     </section>
 
-    <section class="text-center mb-10">
+    <section class="text-center max-w-2xl mx-auto mb-10">
       <div class="container mx-auto bg-gray-100 rounded-lg p-6">
         <h3 class="text-3xl font-bold text-secondary mb-4">What is Private Equity?</h3>
         <p class="text-gray-700 text-lg leading-relaxed mb-6">
@@ -96,12 +96,17 @@
           . This book provides a compelling look behind the scenes at one of the
           world’s most influential private equity firms, detailing the industry’s evolution and strategies.
         </p>
+      </div>
+    </section>
 
-        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+    <section class="text-center max-w-2xl mx-auto mb-10">
+      <div class="text-lg container mx-auto bg-gray-100 rounded-lg p-6">
+        <h3 class="text-3xl font-bold text-secondary mb-4">List of PE companies in Ireland</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
           In the Ireland private equity landscape, several firms have established significant portfolios:
         </p>
 
-        <ul class="text-left mx-auto max-w-2xl space-y-4">
+        <ul class="text-left space-y-4">
           <li>
             <a href="https://www.blackstone.com" target="_blank" class="text-primary font-semibold hover:underline">
               Blackstone
@@ -197,6 +202,47 @@
       </div>
     </section>
 
+    <!-- Example: Rolling Up 10 Dry Cleaning Businesses -->
+    <section class="text-center max-w-2xl mx-auto mb-10">
+      <div class="container mx-auto bg-gray-100 rounded-lg p-6">
+        <h3 class="text-3xl font-bold text-secondary mb-4">What is the Roll-Up Strategy?</h3>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+          A roll-up strategy is a private equity investment approach in which multiple small businesses in the same
+          industry are acquired and consolidated into a single, more efficient entity. This creates economies of scale,
+          reduces costs, and increases profitability, leading to a higher overall valuation than the sum of
+          the individual businesses.
+        </p>
+
+        <div class="text-left">
+          <h3 class="text-xl font-bold text-primary mt-6">Example: Rolling Up 10 Dry Cleaning Businesses</h3>
+          <h4 class="font-bold text-primary mt-6">Step 1: Acquisition</h4>
+          Consider the acquisition of 10 independent dry cleaning businesses in a city. Each business generates
+          €300K in revenue and <strong>€100K in profit</strong> per year. The owners are willing to
+          sell at a <strong>2x multiple</strong>, meaning each location is valued at <strong>€200K</strong>. Buying
+          all 10 would <strong>cost €2M</strong>. Once acquired, the private equity firm (PE) now owns 10 separate
+          dry cleaning locations with a combined <strong>€3M in revenue</strong> and <strong>€1M in profit</strong> per
+          year. At this point, the PE can proceed with the merger.
+
+          <h4 class="font-bold text-primary mt-6">Step 2: Consolidation</h4>
+          <ul class="list-disc pl-6 text-gray-700">
+            <li>Rebrand all locations under one unified brand to increase recognition and customer trust.</li>
+            <li>Centralize administration for HR, finance, and customer service, eliminating redundant costs.</li>
+            <li>Introduce a mobile app for online booking, payments, and order tracking.</li>
+            <li>Move non-urgent dry cleaning orders (e.g., hotel & restaurants contracts) to a central processing location.</li>
+            <li>Upgrade to modern dry-cleaning machines with eco-friendly solvents, reducing waste and chemical costs.</li>
+            <li>Buy cleaning supplies and solvents in bulk, reducing costs across all locations.</li>
+          </ul>
+
+          <h4 class="font-bold text-primary mt-6">Step 3: Exit Strategy</h4>
+          <p class="text-gray-700 text-lg leading-relaxed">
+            After these improvements, profit increases to <strong>€1.2 million</strong> per year. With better
+            efficiency, scalability, and margins, the business becomes attractive to buyers at a <strong>4x profit
+              multiple</strong>. This means the company can now be sold for <strong>€4.8M</strong>, generating a
+            <strong>€2.8M profit</strong> for the private equity firm.
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
