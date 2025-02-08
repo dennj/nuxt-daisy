@@ -6,8 +6,9 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Pluton Capital is a Private Equity firm in the Republic of Ireland specializing in acquiring and merging companies in fragmented markets.',
+      content: 'Pluton Capital is a Private Equity firm in the Republic of Ireland specialized in acquiring and merging companies in fragmented markets.',
     },
+    { name: 'theme-color', content: '#143d5c' }
   ],
   htmlAttrs: {
     lang: 'en',

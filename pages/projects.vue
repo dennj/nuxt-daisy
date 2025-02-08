@@ -9,7 +9,7 @@
         <!-- Project Clean -->
         <div class="card bg-white border-2 border-secondary rounded-lg">
           <figure class="w-full">
-            <NuxtImg src="/images/laundry.jpg" alt="Laundry" class="w-full h-48 object-cover rounded-t-lg" />
+            <NuxtImg src="/images/laundry.avif" alt="Laundry" class="w-full h-48 object-cover rounded-t-lg" />
           </figure>
           <div class="card-body p-6">
             <h2 class="card-title text-primary text-2xl font-semibold">Project Clean</h2>
