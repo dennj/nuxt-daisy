@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/content', '@nuxtjs/sitemap', '@nuxt/image', '@nuxtjs/supabase', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/sitemap', '@nuxt/content', '@nuxt/image', '@nuxtjs/supabase', '@nuxtjs/tailwindcss', 'nuxt-gtag'],
 
   supabase: {
     url: process.env.SUPABASE_URL,
@@ -41,5 +41,8 @@ export default defineNuxtConfig({
 
   image: {
     formats: ['avif', 'webp'],
+  },
+  gtag: {
+    id: 'G-ZDXSPVM1D8'
   },
 });
