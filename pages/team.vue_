@@ -12,10 +12,10 @@
       >
         <!-- Image -->
         <figure class="w-full h-64 overflow-hidden">
-          <img
+          <NuxtImg
             :src="member.image"
             :alt="`${member.name} photo`"
-            class="object-cover w-full h-full"
+            class="object-cover w-full h-full" style="pointer-events: none;"
           />
         </figure>
 
@@ -48,8 +48,8 @@
 </template>
 
 <script setup>
-import DennjOseleImage from '@/assets/images/team/dennj-osele.jpg';
-import RaghavBholaImage from '@/assets/images/team/raghav-bhola.jpg';
+import DennjOseleImage from '@/assets/images/team/dennj-osele.avif';
+import RaghavBholaImage from '@/assets/images/team/raghav-bhola.avif';
 
 const team = [
   {

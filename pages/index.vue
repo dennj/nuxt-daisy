@@ -14,10 +14,10 @@
           <NuxtLink to="/contact" class="btn btn-primary btn-lg">Get In Touch</NuxtLink>
         </div>
 
-        <!-- Hero Image -->
-        <div class="md:w-1/2 md:ml-4">
+        <!-- Hero Image with aspect-ratio -->
+        <div class="md:w-1/2 md:ml-4 rounded-lg overflow-hidden">
           <NuxtImg src="/images/kelly.avif" alt="Hero Image" width="1200" height="800"
-            class="rounded-lg w-full h-auto" />
+            class="w-full h-auto object-cover" style="aspect-ratio: 3 / 2; pointer-events: none;" />
         </div>
       </div>
     </section>
@@ -29,7 +29,8 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div v-for="problem in problems" :key="problem.title" class="card bg-base-200">
             <figure class="w-full">
-              <NuxtImg :src="problem.image" :alt="problem.title" class="w-full h-48 object-cover rounded-t-lg" />
+              <NuxtImg :src="problem.image" :alt="problem.title" class="w-full h-48 object-cover rounded-t-lg"
+                style="pointer-events: none;" />
             </figure>
             <div class="card-body">
               <h4 class="text-xl font-bold mb-4 text-primary">{{ problem.title }}</h4>
@@ -101,102 +102,17 @@
 
     <section class="text-center max-w-2xl mx-auto mb-10">
       <div class="text-lg container mx-auto bg-gray-100 rounded-lg p-6">
-        <h3 class="text-3xl font-bold text-secondary mb-4">List of PE companies in Ireland</h3>
+        <h3 class="text-3xl font-bold text-secondary mb-4">List of PE Companies in Ireland</h3>
         <p class="text-gray-700 leading-relaxed mb-4">
-          In the Ireland private equity landscape, several firms have established significant portfolios:
+          The Irish private equity landscape includes firms that specialize in various sectors, from technology to real
+          estate.
         </p>
 
         <ul class="text-left space-y-4">
-          <li>
-            <a href="https://www.blackstone.com" target="_blank" class="text-primary font-semibold hover:underline">
-              Blackstone
-            </a> - One of the largest global PE firms, investing in real estate, infrastructure, and private equity.
-          </li>
-          <li>
-            <a href="https://renatus.ie" target="_blank" class="text-primary font-semibold hover:underline">
-              Renatus Capital Partners
-            </a> - Boutique firm investing in Irish & UK companies with global ambitions (€1B enterprise value).
-          </li>
-          <li>
-            <a href="https://mmlcapital.ie" target="_blank" class="text-primary font-semibold hover:underline">
-              MML Capital Ireland
-            </a> - Focuses on Irish SMEs, supporting founders and management teams (€270M AUM).
-          </li>
-          <li>
-            <a href="https://cardinalcapitalgroup.com" target="_blank"
-              class="text-primary font-semibold hover:underline">
-              Cardinal Capital Group
-            </a> - Invests in leading Irish companies to accelerate growth and scale.
-          </li>
-          <li>
-            <a href="https://meliorequity.com" target="_blank" class="text-primary font-semibold hover:underline">
-              Melior Equity Partners
-            </a> - Works with motivated Irish business owners, driving strategic investments.
-          </li>
-          <li>
-            <a href="https://elkstonepartners.com" target="_blank" class="text-primary font-semibold hover:underline">
-              Elkstone
-            </a> - Invests across multiple sectors, including real estate, private equity, and venture capital.
-          </li>
-          <li>
-            <a href="https://pluton.capital" target="_blank" class="text-primary font-semibold hover:underline">
-              Pluton Capital
-            </a> - Specializes in SME rollup in Ireland's service sector and growth through tech adoption.
-          </li>
-          <li>
-            <a href="https://waterlandpe.com" target="_blank" class="text-primary font-semibold hover:underline">
-              Waterland Private Equity
-            </a> - Focuses on buy-and-build strategies in multiple countries, including Ireland.
-          </li>
-          <li>
-            <a href="https://abven.com" target="_blank" class="text-primary font-semibold hover:underline">
-              Atlantic Bridge
-            </a> - Specializes in technology investments, supporting high-growth tech companies.
-          </li>
-          <li>
-            <a href="https://venturewave.com" target="_blank" class="text-primary font-semibold hover:underline">
-              VentureWave Capital
-            </a> - Focuses on high-potential startups and impact investing.
-          </li>
-          <li>
-            <a href="https://developmentcapital.ie" target="_blank" class="text-primary font-semibold hover:underline">
-              Development Capital
-            </a> - Provides minority investments in Irish SMEs to scale while maintaining founder control.
-          </li>
-          <li>
-            <a href="https://serobavc.com" target="_blank" class="text-primary font-semibold hover:underline">
-              Seroba Life Sciences
-            </a> - A venture capital firm investing in biotech and medtech companies.
-          </li>
-          <li>
-            <a href="https://biavest.com" target="_blank" class="text-primary font-semibold hover:underline">
-              Biavest
-            </a> - Specializes in buyouts of food companies, focusing on scaling operations.
-          </li>
-          <li>
-            <a href="https://woodberrycapital.com" target="_blank" class="text-primary font-semibold hover:underline">
-              Woodberry Capital
-            </a> - A long-term investment firm focusing on sustainable businesses.
-          </li>
-          <li>
-            <a href="https://broadlake.ie" target="_blank" class="text-primary font-semibold hover:underline">
-              Broadlake
-            </a> - Invests in sustainable businesses with a long-term value creation strategy.
-          </li>
-          <li>
-            <a href="https://centrusfinancial.com" target="_blank" class="text-primary font-semibold hover:underline">
-              Centrus
-            </a> - Specializes in sustainable investment strategies with a long-term focus.
-          </li>
-          <li>
-            <a href="https://actventure.capital" target="_blank" class="text-primary font-semibold hover:underline">
-              Act Venture Capital
-            </a> - Focuses on early-stage startups, backing high-growth tech companies.
-          </li>
-          <li>
-            <a href="https://causewaycapital.eu" target="_blank" class="text-primary font-semibold hover:underline">
-              Causeway Capital
-            </a> - Invests in growing businesses, providing strategic guidance and capital.
+          <li v-for="pe in list_pe" :key="pe.name">
+            <a :href="pe.link" target="_blank" class="text-primary font-semibold hover:underline">
+              {{ pe.name }}
+            </a> - {{ pe.description }}
           </li>
         </ul>
       </div>
@@ -228,8 +144,10 @@
             <li>Rebrand all locations under one unified brand to increase recognition and customer trust.</li>
             <li>Centralize administration for HR, finance, and customer service, eliminating redundant costs.</li>
             <li>Introduce a mobile app for online booking, payments, and order tracking.</li>
-            <li>Move non-urgent dry cleaning orders (e.g., hotel & restaurants contracts) to a central processing location.</li>
-            <li>Upgrade to modern dry-cleaning machines with eco-friendly solvents, reducing waste and chemical costs.</li>
+            <li>Move non-urgent dry cleaning orders (e.g., hotel & restaurants contracts) to a central processing
+              location.</li>
+            <li>Upgrade to modern dry-cleaning machines with eco-friendly solvents, reducing waste and chemical costs.
+            </li>
             <li>Buy cleaning supplies and solvents in bulk, reducing costs across all locations.</li>
           </ul>
 
@@ -290,6 +208,100 @@ const steps = [
     title: 'Exit Strategy',
     description: 'Small businesses typically face lower valuation multiples because they are highly dependent on the owner, lack access to capital, and are perceived as riskier investments. By merging these smaller companies into a larger entity, Pluton Capital creates a business with a solid management structure, access to capital, and greater stability. Larger companies are seen as more reliable and scalable, which makes them far more appealing to buyers. Additionally, our network of brokers collaborates to identify suitable buyers, ensuring a smooth exit at a significantly higher valuation multiple.',
   },
+];
+
+
+const list_pe = [
+  {
+    name: "Blackstone",
+    description: "One of the largest global PE firms, investing in real estate, infrastructure, and private equity.",
+    link: "https://www.blackstone.com",
+  },
+  {
+    name: "Renatus Capital Partners",
+    description: "Boutique firm investing in Irish & UK companies with global ambitions (€1B enterprise value).",
+    link: "https://renatus.ie",
+  },
+  {
+    name: "MML Capital Ireland",
+    description: "Focuses on Irish SMEs, supporting founders and management teams (€270M AUM).",
+    link: "https://mmlcapital.ie",
+  },
+  {
+    name: "Cardinal Capital Group",
+    description: "Invests in leading Irish companies to accelerate growth and scale.",
+    link: "https://cardinalcapitalgroup.com",
+  },
+  {
+    name: "Melior Equity Partners",
+    description: "Works with motivated Irish business owners, driving strategic investments.",
+    link: "https://meliorequity.com",
+  },
+  {
+    name: "Elkstone",
+    description: "Invests across multiple sectors, including real estate, private equity, and venture capital.",
+    link: "https://elkstonepartners.com",
+  },
+  {
+    name: "Pluton Capital",
+    description: "Specializes in SME rollup in Ireland's service sector and growth through tech adoption.",
+    link: "https://pluton.capital",
+  },
+  {
+    name: "Waterland Private Equity",
+    description: "Focuses on buy-and-build strategies in multiple countries, including Ireland.",
+    link: "https://waterlandpe.com",
+  },
+  {
+    name: "Atlantic Bridge",
+    description: "Specializes in technology investments, supporting high-growth tech companies.",
+    link: "https://abven.com",
+  },
+  {
+    name: "VentureWave Capital",
+    description: "Focuses on high-potential startups and impact investing.",
+    link: "https://venturewave.com",
+  },
+  {
+    name: "Development Capital",
+    description: "Provides minority investments in Irish SMEs to scale while maintaining founder control.",
+    link: "https://developmentcapital.ie",
+  },
+  {
+    name: "Seroba Life Sciences",
+    link: "https://serobavc.com",
+    description: "A venture capital firm investing in biotech and medtech companies."
+  },
+  {
+    name: "Biavest",
+    link: "https://biavest.com",
+    description: "Specializes in buyouts of food companies, focusing on scaling operations."
+  },
+  {
+    name: "Woodberry Capital",
+    link: "https://woodberrycapital.com",
+    description: "A long-term investment firm focusing on sustainable businesses."
+  },
+  {
+    name: "Broadlake",
+    link: "https://broadlake.ie",
+    description: "Invests in sustainable businesses with a long-term value creation strategy."
+  },
+  {
+    name: "Centrus",
+    link: "https://centrusfinancial.com",
+    description: "Specializes in sustainable investment strategies with a long-term focus."
+  },
+  {
+    name: "Act Venture Capital",
+    link: "https://actventure.capital",
+    description: "Focuses on early-stage startups, backing high-growth tech companies."
+  },
+  {
+    name: "Causeway Capital",
+    link: "https://causewaycapital.eu",
+    description: "Invests in growing businesses, providing strategic guidance and capital."
+  }
 ];
 
 // Active tab state
