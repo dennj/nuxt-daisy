@@ -14,10 +14,10 @@
           <NuxtLink to="/contact" class="btn btn-primary btn-lg">Get In Touch</NuxtLink>
         </div>
 
-        <!-- Hero Image with aspect-ratio -->
+        <!-- Hero Image with Fixed Aspect Ratio -->
         <div class="md:w-1/2 md:ml-4 rounded-lg overflow-hidden">
-          <NuxtImg src="/images/kelly.avif" alt="Hero Image" width="1200" height="800"
-            class="w-full h-auto object-cover" style="aspect-ratio: 3 / 2; pointer-events: none;" />
+          <NuxtImg src="/images/kelly.avif" alt="Hero Image"
+            class="w-full aspect-[3/2] object-cover pointer-events-none" />
         </div>
       </div>
     </section>
