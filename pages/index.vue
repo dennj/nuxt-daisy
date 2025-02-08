@@ -15,9 +15,9 @@
         </div>
 
         <!-- Hero Image with Fixed Aspect Ratio -->
-        <div class="md:w-1/2 md:ml-4 rounded-lg overflow-hidden">
-          <NuxtImg src="/images/kelly.avif" alt="Hero Image"
-            class="w-full aspect-[3/2] object-cover pointer-events-none" />
+        <div class="md:w-1/2 md:ml-4 rounded-lg overflow-hidden min-h-[400px]">
+          <NuxtImg src="/images/kelly.avif" alt="Hero Image" class="w-full h-full object-cover pointer-events-none"
+            width="1200" height="800" />
         </div>
       </div>
     </section>
