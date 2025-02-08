@@ -38,4 +38,8 @@ export default defineNuxtConfig({
     gzip: true,
     autoLastmod: true,
   },
+
+  image: {
+    formats: ['avif', 'webp'],
+  },
 });

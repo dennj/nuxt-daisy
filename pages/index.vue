@@ -16,7 +16,7 @@
 
         <!-- Hero Image -->
         <div class="md:w-1/2 md:ml-4">
-          <NuxtImg src="/images/kelly.jpg" alt="Hero Image" width="1200" height="800"
+          <NuxtImg src="/images/kelly.avif" alt="Hero Image" width="1200" height="800"
             class="rounded-lg w-full h-auto" />
         </div>
       </div>
@@ -254,17 +254,17 @@ const problems = [
   {
     title: 'Fragmented Market',
     description: 'The Irish service market is highly fragmented, creating inefficiencies and limiting growth potential.',
-    image: '/images/puzzle.jpg'
+    image: '/images/puzzle.avif'
   },
   {
     title: 'Aging Business Owners',
     description: '20% of business owners are over 60 and looking to retire, leaving businesses without succession plans.',
-    image: '/images/retire.jpg'
+    image: '/images/retire.avif'
   },
   {
     title: 'Scaling Challenges',
     description: 'Many owners lack the capital and expertise needed to scale their businesses effectively.',
-    image: '/images/scale.jpg'
+    image: '/images/scale.avif'
   }
 ];
 
