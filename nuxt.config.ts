@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/sitemap', '@nuxt/content', '@nuxt/image', '@nuxtjs/supabase', '@nuxtjs/tailwindcss', 'nuxt-gtag'],
+  modules: ['@nuxtjs/sitemap', '@nuxt/content', '@nuxt/image', '@nuxtjs/supabase', '@nuxtjs/tailwindcss', 'nuxt-gtag', '@nuxtjs/robots'],
 
   supabase: {
     url: process.env.SUPABASE_URL,
